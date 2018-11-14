@@ -10,3 +10,6 @@ function accum(s) {
     }
     return final.slice(0, -1);
 }
+
+// OPTIMIZED
+  return s.split('').map((x, index) => x.toUpperCase() + Array(index + 1).join(x.toLowerCase())).join('-');
